@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff; /* White background for the container */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input[type="time"], input[type="text"], button {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .event-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .event-list li {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+        .event-list li:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Event Management System</h1>
+        <form id="eventForm">
+            <label for="startTime">Start Time:</label>
+            <input type="time" id="startTime" required><br>
+            <label for="endTime">End Time:</label>
+            <input type="time" id="endTime" required><br>
+            <label for="description">Description:</label>
+            <input type="text" id="description" required><br>
+            <button type="submit">Add Event</button>
+        </form>
+        <h2>Events</h2>
+        <ul id="eventList" class="event-list"></ul>
+        <h2>Conflicts</h2>
+        <ul id="conflictList" class="event-list"></ul>
+    </div>
+
+    <script src="main.js">
+       
+    </script>
+</body>
+</html>
